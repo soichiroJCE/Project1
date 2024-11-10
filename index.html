@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS.css File Reference -->
+    <link rel="stylesheet" href="css.css">
+
+    <!-- Tab Title -->
+    <title> Iron Valley Mead & Wine </title>
+
+    <!-- Homepage Background Color (Destroyer Grey) -->
+    <!-- (150, 148, 142) -->
+    <style>
+        body 
+        {
+            background-color: rgb(150, 148, 142);
+        }
+    </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation_bar">
+      <div class="logo">
+        <a href="index.html">
+          <!-- Placeholder Logo -->
+          <img src="https://yt3.googleusercontent.com/ytc/AIdro_mBHkLrlXrdIgqaRZk_vgkefWPQ8M14XRbGEDlTMLsSLns=s160-c-k-c0x00ffffff-no-rj" alt="weniuslogo">
+          <!-- Homepage Title -->
+          <span class="site-title">Iron Valley Mead & Wine</span>
+        </a>
+      </div>
+
+      <!-- Navigation Bar: Triple line for small resize -->
+      <div class="hamburger-menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+
+      <!-- Navigation Bar: Page selection -->
+      <div class="nav-menu hide">
+        <a href="../website/index.html">Home</a>
+        <a href="navbar/product info.html">Product Info</a>
+        <a href="navbar/about.html">About</a>
+        <a href="navbar/contact.html">Contact</a>
+        <a href="https://ironvalleymead.wixsite.com/iron-valley-mead-1">Shop</a>
+      </div>
+    </nav>
+
+    <div class="img-slider">
+      <div class="slide active">
+        <img src="1.jpg" alt="">
+        <div class="info">
+          <h2>Title for Slide 1:</h2>
+          <p>1. Sample text here because this is a poorly drawn picture.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        <div class="info">
+          <h2>Title for Slide 2:</h2>
+          <p>2. Sample text here because this is a poorly drawn picture.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="3.jpg" alt="">
+        <div class="info">
+          <h2>Title for Slide 3:</h2>
+          <p>3. Sample text here because this is a poorly drawn picture.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="4.jpg" alt="">
+        <div class="info">
+          <h2>Title for Slide 4:</h2>
+          <p>4. Sample text here because this is a poorly drawn picture.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="5.jpg" alt="">
+        <div class="info">
+          <h2>Title for Slide 5:</h2>
+          <p>5. Sample text here because this is a poorly drawn picture.</p>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+
+      // JScript for manual picture.
+      var manualNav = function(manual) 
+      {
+        slides.forEach((slide) => 
+        {
+          slide.classList.remove('active');
+          btns.forEach((btn) => 
+          {
+            btn.classList.remove('active');
+          });
+        });
+
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+
+      btns.forEach((btn, i) => 
+      {
+        btn.addEventListener("click", () => 
+        {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+
+      // JScript for automatic picture.
+      var repeat = function(activeClass) 
+      {
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+
+        var repeater = () => 
+        {
+          setTimeout(function() 
+          {
+            [...active].forEach((activeSlide) => 
+            {
+              activeSlide.classList.remove('active');
+            });
+
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+
+            if (slides.length == i) 
+            {
+              i = 0;
+            }
+
+            if (i >= slides.length) 
+            {
+              return;
+            }
+            repeater();
+          }, 10000);
+        }
+        repeater();
+      }
+      repeat();
+    </script>
+
+    <!-- Below the Slideshow: Image and Text Box -->
+    <div class="container">
+      <!-- Left Image Section -->
+      <div class="image-container">
+        <img src="1.jpg" alt="Image">
+      </div>
+
+      <!-- Right Text Box Section -->
+      <div class="text-box">
+        <h2>Welcome to Iron Valley Mead & Wine</h2>
+        <p>We offer the finest selection of mead and wine crafted with passion. Explore our collection and find something you love!</p>
+      </div>
+    </div>
+  </header>
+</body>
+
+<!-- JavaScript.js File Reference -->
+<script src="./javascript.js"> </script>
+
+</html>
