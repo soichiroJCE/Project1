@@ -1,75 +1,177 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS.css File Reference -->
-    <link rel="stylesheet" href="contactcss.css">
+  <link rel="stylesheet" href="contactcss.css" />
 
-    <!-- Tab Title -->
-    <title> Iron Valley Mead & Wine </title>
+  <title>Iron Valley Mead & Wine - About</title>
 
-    <!-- Homepage Background Color (Destroyer Grey) -->
-    <!-- (150, 148, 142) -->
-    <style>
-        body 
-        {
-            background-color: rgb(150, 148, 142);
-        }
-    </style>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: rgb(150, 148, 142);
+      font-family: sans-serif;
+    }
+
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .footer-wrap {
+      margin-top: auto;
+    }
+
+    .text-box {
+      width: 90%;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: rgb(84, 82, 78);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+
+    .owner-photo {
+      display: block;
+      max-width: 250px;
+      width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .caption {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      font-style: italic;
+      color: #222;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navigation_bar">
-      <div class="logo">
-        <a href="../index.html">
-          <!-- Placeholder Logo -->
-          <img src="IVMW.png" alt="IVMW LOGO">
-          <!-- Homepage Title -->
-          <span class="site-title">Iron Valley Mead & Wine</span>
-        </a>
-      </div>
+  <div class="page-container">
 
-      <!-- Navigation Bar: Triple line for small resize -->
-      <div class="hamburger-menu">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
+    <header>
+      <nav class="navigation_bar">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="IVMW.png" alt="IVMW LOGO" />
+            <span class="site-title">Iron Valley Mead & Wine</span>
+          </a>
+        </div>
 
-      <!-- Navigation Bar: Page selection -->
-      <div class="nav-menu hide">
-        <a href="../index.html">Home</a>
-        <a href="../navbar/product info.html">Product Info</a>
-        <a href="../navbar/about.html">About</a>
-        <a href="../navbar/contact.html">Contact</a>
-        <a href="https://ironvalleymead.wixsite.com/iron-valley-mead-1">Shop</a>
-      </div>
-    </nav>
-  </header>
+        <div class="hamburger-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
 
-  <div class="product-info-container">
-    <div class="product-image">
-        <img src="image1.jpg" alt="Product Image 1">
+        <div class="nav-menu hide">
+          <a href="../index.html">Home</a>
+          <a href="../navbar/product info.html">Product Info</a>
+          <a href="../navbar/about.html">About</a>
+          <a href="../navbar/contact.html">Contact</a>
+          <a href="https://ironvalleymead.wixsite.com/iron-valley-mead-1">Shop</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="text-box">
+      <h2>About Iron Valley Mead & Wine</h2>
+      <p>
+        Iron Valley Mead & Wine is dedicated to crafting exceptional meads and wines using traditional
+        techniques with modern innovations. Our mission is to provide high-quality, handcrafted
+        beverages.
+      </p>
     </div>
-    <div class="product-text">
-        <p>This is the first text box with some product details.</p>
+
+    <div class="text-box">
+      <h2>Our Purpose</h2>
+      <p>
+        This website serves as the digital gateway for enthusiasts and customers to explore our product
+        range, learn about our craft, and connect with the passion behind every bottle. We believe in
+        transparency, quality, and community engagement, providing detailed information about our offerings
+        and inviting visitors to experience the flavors we create.
+      </p>
     </div>
-    <div class="product-image">
-        <img src="image2.jpg" alt="Product Image 2">
+
+    <div class="text-box">
+      <h2>Legal Information</h2>
+      <p>
+        Iron Valley Mead & Wine complies fully with all applicable federal, state, and local laws governing
+        the production, distribution, and sale of alcoholic beverages. We maintain all necessary licenses and
+        permits and adhere to responsible marketing and sales practices. All products are intended for
+        customers aged 21 and over. Please drink responsibly.
+      </p>
+      <p>
+        For detailed legal disclosures, privacy policies, and terms of use, please refer to the
+        <a href="../legal.html" style="color: black; font-weight: bold;">Legal</a> section on our website.
+      </p>
     </div>
-    <div class="product-text">
-        <p>This is the second text box with additional product details.</p>
+
+    <div class="text-box">
+      <h2>Meet the Owner & Our Production Process</h2>
+      <img src="owner-photo.jpg" alt="Photo of the owner" class="owner-photo" />
+      <p class="caption">Mike Shields, founder of Iron Valley Mead & Wine</p>
+
+      <p>
+        Our mead is crafted through a meticulous process that honors traditional methods:
+      </p>
+      <ol>
+        <li><strong>Honey Selection:</strong> We source only the finest local honey, ensuring purity and
+          natural flavor.</li>
+        <li><strong>Fermentation:</strong> Carefully monitored fermentation transforms the honey into a
+          smooth, balanced mead.</li>
+        <li><strong>Aging:</strong> Our meads mature through glass jar fermentation to maintain clean and quality mead.</li>
+        <li><strong>Bottling & Quality Control:</strong> Every batch undergoes strict quality checks before
+          bottling to guarantee excellence.</li>
+      </ol>
     </div>
-</div>
+
+    <div class="footer-wrap">
+      <div style="background-color: black; height: 20px; width: 100%; margin-top: 40px;"></div>
+
+      <footer style="background-color: rgb(84, 82, 78); color: white; padding: 40px 20px; font-size: 14px;">
+        <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+          <div style="flex: 1 1 200px; margin: 10px;">
+            <h3>About This Site</h3>
+            <p>Iron Valley Mead & Wine is dedicated to producing high-quality meads and wines.</p>
+          </div>
+
+          <div style="flex: 1 1 200px; margin: 10px;">
+            <h3>Contact Us</h3>
+            <p>Email: contact@ironvalleymead.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Location: Sample Address, PA</p>
+          </div>
+
+          <div style="flex: 1 1 200px; margin: 10px;">
+            <h3>Payment Methods</h3>
+            <p>Visa, MasterCard, PayPal, Discover</p>
+          </div>
+
+          <div style="flex: 1 1 100%; margin: 10px;">
+            <p>All trademarks, screenshots, and logos are the property of their respective owners.</p>
+            <p>&copy; 2025 Iron Valley Mead & Wine. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./product infojavascript.js"></script>
 </body>
-
-<!-- JavaScript.js File Reference -->
-<script src="./product infojavascript.js"> </script>
 
 </html>
